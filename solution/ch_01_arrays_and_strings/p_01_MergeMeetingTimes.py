@@ -8,7 +8,7 @@ def merge_ranges(ranges):
     Merges ranges into smallest set of continuous ranges
     Time Complexty: O(n lg(n))
     Space Complexity: O(n)
-    >>> all_unique([(1, 2), (4, 6), (5, 7)])
+    >>> merge_ranges([(1, 2), (4, 6), (5, 7)])
     [(1, 2), (4, 7)]
     """
 

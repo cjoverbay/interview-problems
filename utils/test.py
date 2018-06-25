@@ -13,4 +13,4 @@ class TestCase(unittest.TestCase):
     # Custom assert which logs function name on an error.
     # (To determine which implementation caused error)
     def assertFunctionResultEquals(self, func, params, expected):
-        return self.assertEqual(func(*params), expected, 'in function ' + func.__name__)
+        return self.assertEqual(expected, func(*params), 'in function ' + func.__name__)
