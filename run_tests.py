@@ -14,10 +14,15 @@ def run_tests():
     runner.run(suite)
 
     print('Running Doc Tests...')
-    print(dir(solution))
-    print(dir(solution.chapter_01_arrays_and_strings))
+    print_functions(solution)
+    print_functions(solution.ch_01_arrays_and_strings)
     doctest.testmod(solution)
+
+
+def print_functions(module):
+    print([d for d in dir(module) if '__' not in d])
 
 
 if __name__ == '__main__':
     run_tests()
+
