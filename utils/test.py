@@ -3,7 +3,7 @@ import unittest
 def get_implementations(package):
     implementations = []
     for attr in [getattr(package, x) for x in dir(package)]:
-        if callable(attr):
+        if callable(attr) and 'solution' in str(attr):
             implementations.append(attr)
 
     return implementations

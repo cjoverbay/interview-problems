@@ -2,7 +2,7 @@
 Problem: Write a function merge_ranges which takes a list of tuples
 """
 
-def reverse(list_of_chars, start_idx=0, end_idx=-1):
+def solution_reverse(list_of_chars, start_idx=0, end_idx=-1):
     """
     Merges ranges into smallest set of continuous ranges
     Time Complexty: O(n)

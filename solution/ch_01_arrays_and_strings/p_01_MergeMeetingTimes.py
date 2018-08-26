@@ -3,7 +3,7 @@ Problem: Write a function merge_ranges which takes a list of tuples
 """
 
 
-def merge_ranges(ranges):
+def solution_merge_ranges(ranges):
     """
     Merges ranges into smallest set of continuous ranges
     Time Complexty: O(n lg(n))

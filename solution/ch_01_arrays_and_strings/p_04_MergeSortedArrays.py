@@ -1,9 +1,9 @@
 """
 Problem: Write a function which will merge two sorted lists
 """
-import heapq;
+import heapq
 
-def merge_sorted_lists(list1, list2):
+def solution_merge_sorted_lists(list1, list2):
     """
     Merges two lists
     Time Complexty: O(n)
@@ -35,5 +35,5 @@ def merge_sorted_lists(list1, list2):
     return merged
 
 
-def builtin_merge_sorted_lists(l1, l2):
+def solution_builtin_merge_sorted_lists(l1, l2):
     return list(heapq.merge(l1, l2))
